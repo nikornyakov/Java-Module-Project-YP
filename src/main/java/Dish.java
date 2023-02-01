@@ -32,20 +32,25 @@ public class Dish {
         System.out.println("Введите стоимость блюда: ");
 
         while (true) {
-            if (scanner.hasNextFloat()) {
+                if (scanner.hasNextFloat()) {
 
-                float cost = scanner.nextFloat();
+                    float cost = scanner.nextFloat();
 
-                if (cost > 0) {
-                    allCost += cost;
-                    break;
-                } else {
-                    System.out.println("Некорректная стоимость\nВведите в формате рублей.копеек");
-                    scanner.nextLine();
+                    if (cost > 0) {
+                        allCost += cost;
+                        break;
+                    } else {
+                        System.out.println("Некорректная стоимость\nВведите в формате рублей.копеек");
+                        scanner.nextLine();
+                    }
+                    } else {
+                        System.out.println("Введите число");
+                        scanner.nextLine();
+                    }
                 }
-            }
         }
-    }
 }
+
+
 
 

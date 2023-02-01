@@ -21,7 +21,7 @@ public class Main {
         while (true) {
             if (scanner.hasNextInt()) {
                 numberPerson = Integer.parseInt(scanner.nextLine());
-                if (numberPerson <=1) {
+                if (numberPerson <= 1) {
                     System.out.println("Некорректное значение");
                 } else {
                     break;
@@ -36,13 +36,13 @@ public class Main {
 
     public static String rublesCases(float cost, int numberPerson) {
         float allRubles = cost / numberPerson;
-        int ruble = (int) (allRubles % 10);
+        int ruble = (int) (allRubles % 100);
         String cases;
         if (ruble == 1) {
             cases = "рубль";
-        } else if (ruble >= 2 && ruble <= 4) {
+        } else if (ruble >= 1 && ruble <= 4) {
             cases = "рубля";
-        } else if (ruble >= 5 && ruble <= 9) {
+        } else if (ruble >= 11 && ruble <= 14) {
             cases = "рублей";
         } else {
             cases = "рублей";
