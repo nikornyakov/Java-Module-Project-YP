@@ -40,7 +40,7 @@ public class Main {
         String cases;
         if (ruble == 1) {
             cases = "рубль";
-        } else if (ruble >= 1 && ruble <= 4) {
+        } else if (ruble >= 2 && ruble <= 4) {
             cases = "рубля";
         } else if (ruble >= 11 && ruble <= 14) {
             cases = "рублей";
